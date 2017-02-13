@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_options"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cstephens19.myapplication.OptionsActivity">
+
+    <Button
+        android:text="Lunch"
+        android:layout_height="wrap_content"
+        android:id="@+id/LunchButton"
+        android:layout_marginTop="35dp"
+        android:layout_width="200dp"
+        android:layout_below="@+id/BreakfastButton"
+        android:layout_alignStart="@+id/BreakfastButton"
+        android:onClick="showLunchMenu"
+        android:background="@android:color/holo_purple" />
+
+    <Button
+        android:text="Dinner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/DinnerButton"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/LunchButton"
+        android:layout_alignStart="@+id/LunchButton"
+        android:onClick="showDinnerMenu"
+        android:background="@android:color/holo_purple" />
+
+    <Button
+        android:text="Breakfast"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:id="@+id/BreakfastButton"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="showBreakfastMenu"
+        android:background="@android:color/holo_purple" />
+</RelativeLayout>

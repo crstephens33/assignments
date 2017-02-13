@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cstephens19.myapplication.LoginActivity">
+
+    <TextView
+        android:text="Log in to MyAmherst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/holo_purple"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Please enter your information, or register to create a new account."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:textSize="18sp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="31dp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/enterUsername"
+        style="@style/Widget.AppCompat.EditText"
+        android:padding="10dp"
+        android:hint="username"
+        android:background="@drawable/back"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/enterPassword"
+        android:padding="10dp"
+        android:hint="password"
+        android:background="@drawable/back"
+        android:layout_below="@+id/enterUsername"
+        android:layout_alignStart="@+id/enterUsername" />
+
+    <Button
+        android:text="Log in!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LoginButton"
+        android:onClick="checkLogin"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/enterPassword"
+        android:layout_alignEnd="@+id/enterPassword"
+        android:background="@android:color/holo_purple" />
+
+    <Button
+        android:text="REGISTER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RegisterButton"
+        android:layout_marginBottom="11dp"
+        android:onClick="openRegistration"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/LoginButton"
+        android:layout_alignEnd="@+id/textView2"
+        android:background="@android:color/holo_purple" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:id="@+id/NotificationText"
+        android:layout_above="@+id/RegisterButton"
+        android:layout_alignStart="@+id/LoginButton"
+        android:layout_alignEnd="@+id/LoginButton"
+        android:textColor="@android:color/holo_red_dark" />
+
+</RelativeLayout>
